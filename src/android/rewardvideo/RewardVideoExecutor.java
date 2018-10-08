@@ -54,7 +54,7 @@ public class RewardVideoExecutor extends AbstractExecutor {
                         Bundle extras = new Bundle();
                         extras.putBoolean("_noRefresh", true);
                         AdRequest adRequest = new AdRequest.Builder()
-                                .addNetworkExtrasBundle(AdMobAdapter.class, extras)
+//                                 .addNetworkExtrasBundle(AdMobAdapter.class, extras)
                                 .build();
                         rewardedVideoAd.loadAd(plugin.config.getRewardedVideoAdUnitId(), adRequest);
                         delayCallback.success();
